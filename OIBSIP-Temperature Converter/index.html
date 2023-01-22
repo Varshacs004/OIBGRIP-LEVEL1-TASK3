@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="hed">Temperature Converter</div>
+      <div class="emoji">
+        <i class="bx bxs-thermometer"></i>
+      </div>
+      <div class="boxcontainer">
+        <div class="box1">
+          <p><b>Degree</b></p>
+          <input type="number" class="takval" />
+        </div>
+        <div class="box1">
+          <p><b>Type</b></p>
+          <select name="" id="unit">
+            <option value="Fahrenheit">Fahrenheit</option>
+            <option value="Celsius">Celsius</option>
+          </select>
+        </div>
+      </div>
+      <div class="valuecontainer">
+        <p><b>Result</b></p>
+        <div class="value"></div>
+      </div>
+      <button onclick="temprature()" class="button"><b>Convert</b></button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
